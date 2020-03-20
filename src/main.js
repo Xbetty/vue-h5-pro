@@ -3,8 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import { ToastPlugin, LoadingPlugin, ConfirmPlugin } from 'vux'
 
 Vue.config.productionTip = false
+
+Vue.use(ToastPlugin)
+Vue.use(LoadingPlugin)
+Vue.use(ConfirmPlugin)
 
 /* eslint-disable no-new */
 new Vue({
